@@ -10,6 +10,9 @@ import { GetByIdComponent } from './components/get-by-id/get-by-id.component';
 import { DeleteComponent } from './components/delete/delete.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { UpdateComponent } from './components/update/update.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { UpdateComponent } from './components/update/update.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    HttpClientModule,
+    RouterModule,
+    NgbModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
